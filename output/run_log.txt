@@ -1,0 +1,55 @@
+=== fft_denoise ===
+GPU: Tesla T4
+Signals: 256 x 1024 samples, cutoff bin 32, noise std 0.80
+CPU time:      13.827 ms
+GPU time:       0.842 ms  (copy in 0.325, FFT 0.024, filter 0.051, IFFT 0.016, copy out 0.426)
+Speedup:        16.43x
+SNR:         3.65 dB ->  15.87 dB (gain 12.23 dB)
+Max |GPU - CPU| = 1.43e-05 -> VERIFIED
+
+=== fft_denoise ===
+GPU: Tesla T4
+Signals: 1024 x 1024 samples, cutoff bin 32, noise std 0.80
+CPU time:      53.878 ms
+GPU time:       4.049 ms  (copy in 0.977, FFT 0.038, filter 0.067, IFFT 0.031, copy out 2.937)
+Speedup:        13.31x
+SNR:         3.66 dB ->  15.85 dB (gain 12.19 dB)
+Max |GPU - CPU| = 2.00e-05 -> VERIFIED
+
+=== fft_denoise ===
+GPU: Tesla T4
+Signals: 4096 x 1024 samples, cutoff bin 32, noise std 0.80
+CPU time:     235.621 ms
+GPU time:      16.048 ms  (copy in 3.785, FFT 0.159, filter 0.128, IFFT 0.150, copy out 11.825)
+Speedup:        14.68x
+SNR:         3.71 dB ->  15.90 dB (gain 12.19 dB)
+Max |GPU - CPU| = 2.00e-05 -> VERIFIED
+
+=== fft_denoise ===
+GPU: Tesla T4
+Signals: 16384 x 1024 samples, cutoff bin 32, noise std 0.80
+CPU time:     887.812 ms
+GPU time:      64.857 ms  (copy in 14.728, FFT 0.680, filter 0.429, IFFT 0.719, copy out 48.301)
+Speedup:        13.69x
+SNR:         3.73 dB ->  15.92 dB (gain 12.19 dB)
+Max |GPU - CPU| = 2.00e-05 -> VERIFIED
+
+=== fft_denoise ===
+GPU: Tesla T4
+Signals: 65536 x 1024 samples, cutoff bin 32, noise std 0.80
+CPU time:    3569.551 ms
+GPU time:     257.626 ms  (copy in 58.685, FFT 2.659, filter 1.577, IFFT 2.837, copy out 191.868)
+Speedup:        13.86x
+SNR:         3.72 dB ->  15.90 dB (gain 12.18 dB)
+Max |GPU - CPU| = 2.00e-05 -> VERIFIED
+
+=== fft_denoise ===
+GPU: Tesla T4
+Signals: 4096 x 1024 samples, cutoff bin 32, noise std 0.80
+CPU time:     234.676 ms
+GPU time:      16.180 ms  (copy in 3.947, FFT 0.164, filter 0.151, IFFT 0.150, copy out 11.768)
+Speedup:        14.50x
+SNR:         3.71 dB ->  15.90 dB (gain 12.19 dB)
+Max |GPU - CPU| = 2.00e-05 -> VERIFIED
+Wrote 4 example signals to output/examples.csv
+
